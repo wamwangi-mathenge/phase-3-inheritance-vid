@@ -1,26 +1,22 @@
 require 'pry'
 
-class Cat
-    attr_accessor :name. :age
+class Animal
+    attr_accessor :name, :age
 
     def initialize(name, age)
         @name = name
         @age = age
     end
+end
+
+class Cat < Animal
 
     def speak
         "meeeooowww!"
     end
 end
 
-class Dog
-
-    attr_accessor :name, age
-
-    def initialize(name, age)
-        @name = name
-        @age = age
-    end
+class Dog < Animal
 
     def speak
         "Woof wooof!!!"
@@ -29,3 +25,5 @@ end
 
 cat = Cat.new("garfield", 20)
 dog = Dog.new("snoopy", 15)
+
+binding.pry
