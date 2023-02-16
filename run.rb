@@ -29,8 +29,15 @@ class Cow < Animal
     end
 end
 
+class Cardi < Animal
+    def speak
+        "Ooooookkkkkrrrrrrrrrrrrrrr!!!!!!"
+    end
+end
+
 cat = Cat.new("garfield", 20)
 dog = Dog.new("snoopy", 15)
 cow = Cow.new("emma", 30)
+cardi = Cardi.new("wap", 30)
 
 binding.pry
